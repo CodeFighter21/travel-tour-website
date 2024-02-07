@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="log.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Login-Travel World</title>
+</head>
+<body>
+
+<div class="login-container">
+    <form action="/submit-your-login-form" method="post">
+        <h2>Login</h2>
+        <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Login</button>
+        <div class="links">
+            <a href="/forgot-password">Forgot Password?</a>
+            <a href="/register">Don't have an account? Register</a>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

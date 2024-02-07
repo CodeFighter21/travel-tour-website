@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="booknow.css">
+    <title>Travel Details Form</title>
+</head>
+<body>
+
+<div class="form-container">
+    <form action="/submit-travel-details" method="post">
+        <h2>Travel Details</h2>
+
+        <div class="input-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="input-group">
+            <label for="departure">Departure Date</label>
+            <input type="date" id="departure" name="departure">
+        </div>
+
+        <div class="input-group">
+            <label for="return">Return Date</label>
+            <input type="date" id="return" name="return">
+        </div>
+
+        <div class="input-group">
+            <label for="destination">Destination</label>
+            <input type="text" id="destination" name="destination" required>
+        </div>
+        <div class="input-group">
+            <label for="persons">Number of Persons</label>
+            <input type="number" id="persons" name="persons" min="1" required>
+        </div>
+
+        <div class="input-group">
+            <label for="preferences">Travel Preferences</label>
+            <textarea id="preferences" name="preferences"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
